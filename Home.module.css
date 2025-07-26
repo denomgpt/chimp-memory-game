@@ -1,0 +1,80 @@
+.container {
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.level {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Grid wrapper */
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Active cells during the memorization phase */
+.active {
+  border-color: #0070f3;
+  background-color: #cfe8ff;
+}
+
+/* Highlight wrong choices */
+.wrong {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.gameover {
+  color: #c53030;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.won {
+  color: #2f855a;
+  font-weight: bold;
+  margin-top: 1rem;
+}
